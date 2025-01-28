@@ -10,8 +10,9 @@ import { SiteLinks} from "@/data/SiteLinks";
 import { Paths } from "@/paths";
 
 import imgPhotoJames from "public/images/photo_placeholder.png";
-import imgPhotoJesse from "public/images/photo_placeholder.png";
+import imgPhotoLeijie from "public/images/photo_leijiew.png"
 import imgPhotoKatelyn from "public/images/photo_katelyn.jpg";
+import imgPhotoKatharina from "public/images/photo_katharina.jpeg";
 import imgPhotoPlaceholder from "public/images/photo_placeholder.png";
 
 # Course Overview
@@ -47,22 +48,10 @@ The course is overwhelmingly organized around a group project, in which students
 <Box display="flex" flexDirection="row" alignItems="flex-start">
   <Box marginTop={-2} marginBottom={-2} marginRight={2}>
     <p>Katharina Reinecke</p>
-    <p>Pronouns</p>
+    <p>she/her</p>
     <p>
       {/* alt="", Treat as decorative, because name is read above */}
-      <Image src={imgPhotoPlaceholder}
-             basePath={Paths.basePath}
-             height="150"
-             alt=""
-      />
-    </p>
-  </Box>
-  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
-    <p>Leijie Wang</p>
-    <p>Pronouns</p>
-    <p>
-      {/* alt="", Treat as decorative, because name is read above */}
-      <Image src={imgPhotoPlaceholder}
+      <Image src={imgPhotoKatharina}
              basePath={Paths.basePath}
              height="150"
              alt=""
@@ -81,6 +70,19 @@ The course is overwhelmingly organized around a group project, in which students
       />
     </p>
   </Box>
+  <Box marginTop={-2} marginBottom={-2} marginRight={2}>
+    <p>Leijie Wang</p>
+    <p>he/his</p>
+    <p>
+      {/* alt="", Treat as decorative, because name is read above */}
+      <Image src={imgPhotoLeijie}
+             basePath={Paths.basePath}
+             height="150"
+             alt=""
+      />
+    </p>
+  </Box>
+  
 </Box>
 
 ## Course Coordination
@@ -90,13 +92,15 @@ The course is overwhelmingly organized around a group project, in which students
   Email course staff at &lt;cse440-staff [at] cs.washington.edu&gt;.
 
   Please do not email individual course staff.
-  Using the course staff email list promotes both staff coordination and a more prompt response.
+  Course staff will try to respond to emails within 24 hours.
+  If you have an urgent matter, please place “URGENT” in the subject line of the email.
+  We cannot guarantee that we will respond immediately to urgent emails, but we will do our best. 
 
 - Course Time & Location
 
   Tuesdays & Thursdays, 10:00-11:20.
   [CSE2](https://www.washington.edu/maps/#!/cse2)
-  Room [G10](https://www.washington.edu/classroom/CSE2+G10)
+  Room [G01](https://www.washington.edu/classroom/CSE2+G01)
 
   The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
 
@@ -104,29 +108,24 @@ The course is overwhelmingly organized around a group project, in which students
 
   - Section B: Fridays, 11:30-12:20 [MGH](https://uw.edu/maps/?mgh)
     Room [058](https://www.washington.edu/classroom/MGH+058).
-  - Section D: Fridays, 1:30-2:20 [MGH](https://uw.edu/maps/?mgh)
-    Room [058](https://www.washington.edu/classroom/MGH+058).
+  - Section D: Fridays, 1:30-2:20 [PAR](https://www.washington.edu/maps/#!/par)
+    Room [220](https://www.washington.edu/classroom/PAR+220).
 
   The <SiteLink linkKey={SiteLinks.calendarTop} /> will provide any non-standard times, locations, or staffing.
 
 - Office Hours
 
-  - James, by appointment.
-  - Jesse, Thursdays 12:00 to 1:00, [CSE2](https://uw.edu/maps/?cse2) 152.
-  - Katelyn, Wednesdays 3:00 to 4:00, [CSE2](https://uw.edu/maps/?cse2) 152.
-
-  Scheduled office hours require that you email beforehand (i.e., at least one hour beforehand).
-  If nobody has emailed regarding an office hour, course staff may not be available.
-  Hours are scheduled most weeks, but check the <SiteLink linkKey={SiteLinks.calendarTop} />.
-  Other meetings are by appointment.
+    Office hours will be held on 3pm-4pm on Tuesday. 
+    Scheduled office hours require that you email beforehand (i.e., at least one day beforehand).
+    If nobody has emailed regarding an office hour, course staff will not be available. 
 
 - Canvas
 
   <CourseStoreLink outerComponent="p" linkKey="linkCanvas" />
 
-Course information and material will primarily be provided on this website.
+    Course information and material will primarily be provided on this website.
 
-Canvas will be used for submissions and for necessary limitation of access to course materials.
+    Canvas will be used for submissions and for necessary limitation of access to course materials.
 
 ## Assignments
 
@@ -224,8 +223,7 @@ An overall course grade will be computed as follows:
   - __15%__: <SiteLink linkKey={SiteLinks.milestone_5_top} outerComponent="span" />: Communicating the Design
     - Assignment Completion (5%)
       - Digital Mockup
-      - Initial Poster
-      - Initial Web Post
+      - Poster
     - Final Poster (5%)
     - Final Web Post (5%)
 - __10%__: Participation
@@ -285,9 +283,6 @@ If class splits into project group activities,
 the Zoom meeting will end and remote students should join their group
 via a video call with a member of their group.
 
-We will also use the in-room Panopto system to record lecture components of the course.
-This can support review of material, but is not a substitute for in-person activities.
-
 ## Accommodations and University Policies
 
 Additional university policies apply
@@ -297,12 +292,3 @@ Additional university policies apply
 
 Please do not hesitate to contact the course staff regarding these or any other accommodations.
 We are happy that you are here and want to support your engagement in this learning environment.
-
-## Course Website
-
-This course website lives on GitHub:
-
-<CourseStoreLink outerComponent="p" linkKey='linkGitHub' />
-
-You can submit pull requests to update the website,
-and you will publish elements of your project to the website via pull request.
