@@ -41,36 +41,16 @@ const TIME_AND_LOCATION_LECTURE = {
   location: "CSE2 G01",
 };
 
-const TIME_AND_LOCATIONS_SECTION = [
-  {
-    time: "11:30 - 12:20",
-    location: "MGH 058",
-  },
-  {
-    time: "1:30 - 2:20",
-    location: "PAR 220",
-  },
-];
-
-const TIME_AND_LOCATION_EXAM_QA = {
-  time: "4:00 to 5:00",
-  location: "Zoom",
+const TIME_AND_LOCATION_SECTION = {
+    time: "11:30 - 12:20 / 12:30 - 1:20",
+    location: "MGH 058 / PAR 220",
 };
 
 const TIME_AND_LOCATION_POSTER_SESSION = {
-  time: "11:00 to 12:00",
-  location: "CSE Atrium",
+  time: "10:00 to 11:20",
+  location: "CSE2 G01",
 };
 
-const TIME_AND_LOCATION_OFFICE_HOUR_JESSE = {
-  time: "12:00 to 1:00",
-  location: "CSE2 152",
-};
-
-const TIME_AND_LOCATION_OFFICE_HOUR_KATELYN = {
-  time: "3:00 to 4:00",
-  location: "CSE2 152",
-};
 
 export function parseCalendarDate(calendarDate: CalendarDate): Date {
   const parsedDate = datefnsParse(calendarDate, "yyyy-MM-dd", new Date());
@@ -195,28 +175,28 @@ export const calendarData: {
       date: verifyCalendarDate("2025-01-07", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Introduction and Overview",
-      slides: "https://drive.google.com/drive/u/3/folders/1HLlSzYYsXJ-FlB_k8ESgPqfS0jeVQdHy",
+      slides: "https://drive.google.com/file/d/1vgYZaVbb6GlbppqaJhmKsGyOB9E8wkNT/view?usp=drive_link",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-01-09", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Design Diamond",
-      slides: "https://drive.google.com/drive/u/3/folders/1HLlSzYYsXJ-FlB_k8ESgPqfS0jeVQdHy",
+      slides: "https://drive.google.com/file/d/1GwgVDr0kaQFlArQzZA4ImTH9e9CCDPWJ/view?usp=drive_link",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-01-14", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Introduction to Critique",
-      slides: "https://drive.google.com/drive/u/3/folders/1HLlSzYYsXJ-FlB_k8ESgPqfS0jeVQdHy",
+      slides: "https://drive.google.com/file/d/1ctxocWaDhitivzDJQjgXo6dABEOAFV23/view?usp=drive_link",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-01-16", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Design Research",
-      slides: "https://drive.google.com/drive/u/3/folders/1HLlSzYYsXJ-FlB_k8ESgPqfS0jeVQdHy",
+      slides: "https://drive.google.com/file/d/1L4LdXIcUSPTvPKfrAjKyPgSMGdB1HN7R/view?usp=drive_link",
     },
     {
       type: "lecture",
@@ -237,96 +217,144 @@ export const calendarData: {
       date: verifyCalendarDate("2025-01-28", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Task Analysis",
-      slides: "",
+      slides: "https://drive.google.com/file/d/178mudWN_BruVSrF4N0TNlHnhh0s3G0BN/view?usp=drive_link",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-01-30", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Storyboarding and Paper Prototyping",
-      slides: "",
+      slides: "https://drive.google.com/file/d/1nuQU-SesXfWhZ696JUIgwqX2-eLX8J28/view?usp=drive_link",
+    },
+    {
+        type: "lecture",
+        dates: [verifyCalendarDate("2025-02-04", "Tue")],
+        timeAndLocation: TIME_AND_LOCATION_LECTURE,
+        title: "Task Review",
+        slides: "https://drive.google.com/file/d/1O0zIALvJu6XOPI5aBBLfcA2Nd4Owrxon/view?usp=drive_link",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-02-06", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Models and Human Performance",
-      slides: "",
+      slides: "https://drive.google.com/file/d/1Gi0zaaSxlYDyB3VrmLbLQ21dP5KU-38N/view?usp=drive_link",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-02-18", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Inspection and Usability Testing",
-      slides: "",
+      slides: "https://drive.google.com/file/d/1dNYBV_ol9o7sii8-6wdpC2ISYta0iF4Y/view?usp=drive_link",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-02-20", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "Patterns and Interface Implementation",
-      slides: "",
+      slides: "https://drive.google.com/file/d/1TJXfi6GwJErg6gEOIDg-5KgmeZR-g03D/view?usp=drive_link",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-02-25", "Tue"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "History & Exam Q&A",
-      slides: "",
+      title: "Societal Impacts of Technology",
+      slides: "https://drive.google.com/file/d/1ZGE7-K0FhCEwX_BE6cNZ2fbblrYoPgIm/view?usp=drive_link",
     },
     {
       type: "lecture",
       date: verifyCalendarDate("2025-02-27", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Designing for Diverse Needs",
+      title: "History & Exam Q&A",
       slides: "",
     },
     {
         type: "lecture",
         date: verifyCalendarDate("2025-03-06", "Thu"),
         timeAndLocation: TIME_AND_LOCATION_LECTURE,
-        title: "Designing for Diverse Needs",
+        title: "Communicating Your Design",
         slides: "",
       },
   ],
 
   studios: [
     {
-      type: "studio",
-      dates: [
-        verifyCalendarDate("2025-01-10", "Fri"),
-        verifyCalendarDate("2025-01-17", "Fri"),
-        verifyCalendarDate("2025-01-24", "Fri"),
-        verifyCalendarDate("2025-01-31", "Fri"),
-        verifyCalendarDate("2025-02-21", "Fri"),
-        verifyCalendarDate("2025-02-28", "Fri"),
-        verifyCalendarDate("2025-03-07", "Fri"),
-      ],
-      timeAndLocations: TIME_AND_LOCATIONS_SECTION,
-      title: "Studio",
+        type: "studio",
+        dates: [verifyCalendarDate("2025-01-10", "Fri")],
+        timeAndLocation: TIME_AND_LOCATION_SECTION,
+        title: "Studio",
+        slides: "https://docs.google.com/presentation/d/1_qE0wfssWxJrQKNKOesRHenYa207y4N4/edit?usp=drive_link&ouid=106501122493213215517&rtpof=true&sd=true",
     },
     {
-      type: "studio",
-      dates: [verifyCalendarDate("2025-02-04", "Tue")],
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Studio",
-      slides: "",
+        type: "studio",
+        dates: [verifyCalendarDate("2025-01-17", "Fri")],
+        timeAndLocation: TIME_AND_LOCATION_SECTION,
+        title: "Studio",
+        slides: "https://docs.google.com/presentation/d/1Yxg6oHX3xean24cqGFkzRvy-k57sM7kU3i8ewkrnhOs/edit?usp=drive_link",
     },
     {
-      type: "studio",
-      dates: [verifyCalendarDate("2025-03-11", "Tue")],
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
-      title: "Studio",
+        type: "studio",
+        dates: [verifyCalendarDate("2025-01-24", "Fri")],
+        timeAndLocation: TIME_AND_LOCATION_SECTION,
+        title: "Studio",
+        slides: "https://docs.google.com/presentation/d/1dlBSkGbiZMJKZg-gl8me79RduWmmgSFs32mXbGn4dUw/edit#slide=id.p",
     },
     {
-      type: "studio",
-      title: "Design Presentations",
-      dates: [
-        verifyCalendarDate("2025-02-11", "Tue"),
-        verifyCalendarDate("2025-02-13", "Thu"),
-        verifyCalendarDate("2025-02-14", "Fri"),
-      ],
-      timeAndLocation: TIME_AND_LOCATION_LECTURE,
+        type: "studio",
+        dates: [verifyCalendarDate("2025-01-31", "Fri")],
+        timeAndLocation: TIME_AND_LOCATION_SECTION,
+        title: "Studio",
+        slides: "",
+    },
+    {
+        type: "studio",
+        dates: [verifyCalendarDate("2025-02-21", "Fri")],
+        timeAndLocation: TIME_AND_LOCATION_SECTION,
+        title: "Studio",
+        slides: "",
+    },
+    {
+        type: "studio",
+        dates: [verifyCalendarDate("2025-02-28", "Fri")],
+        timeAndLocation: TIME_AND_LOCATION_SECTION,
+        title: "Studio",
+        slides: "",
+    },  
+    {
+        type: "studio",
+        dates: [verifyCalendarDate("2025-02-07", "Fri")],
+        timeAndLocation: TIME_AND_LOCATION_SECTION,
+        title: "Studio",
+        slides: "",
+    },
+    {
+        type: "studio",
+        dates: [verifyCalendarDate("2025-02-14", "Fri")],
+        timeAndLocation: TIME_AND_LOCATION_SECTION,
+        title: "Studio",
+        slides: "",
+    },
+    {
+        type: "studio",
+        dates: [verifyCalendarDate("2025-03-07", "Fri")],
+        timeAndLocation: TIME_AND_LOCATION_SECTION,
+        title: "Studio",
+        slides: "",
+    },  
+    {
+        type: "studio",
+        dates: [verifyCalendarDate("2025-03-11", "Tue")],
+        timeAndLocation: TIME_AND_LOCATION_LECTURE,
+        title: "Poster and Mockup Design Critique",
+    },
+    {
+        type: "studio",
+        title: "Design Critique",
+        dates: [
+            verifyCalendarDate("2025-02-11", "Tue"),
+            verifyCalendarDate("2025-02-13", "Thu"),
+        ],
+        timeAndLocation: TIME_AND_LOCATION_LECTURE,
     },
   ],
 
@@ -491,25 +519,25 @@ export const calendarData: {
       type: "assignment",
       title: "Assignment 3.2: Design Review",
       link: SiteLinks.assignment_3_2_top.href,
-      date: verifyCalendarDate("2025-02-09", "Sun"),
+      date: verifyCalendarDate("2025-02-10", "Mon"),
       submission: "canvas",
-      submitCanvasTime: "11:59pm",
+      submitCanvasTime: "03:00pm",
       submitCanvasLink:
         "https://canvas.uw.edu/courses/1779838/assignments/9882196",
     },
     assignment_3_3: {
       type: "assignment",
-      title: "Assignment 3.3: Design Presentation Reflection",
+      title: "Design Critique",
       link: SiteLinks.assignment_3_3_top.href,
-      date: verifyCalendarDate("2025-02-14", "Fri"),
+      date: verifyCalendarDate("2025-02-09", "Sun"),
       submission: "canvas",
       submitCanvasTime: "11:59pm",
       submitCanvasLink:
-        "",
+        "https://canvas.uw.edu/courses/1779838/assignments/9962586",
     },
     assignment_3_4: {
       type: "assignment",
-      title: "Assignment 3.4: Scenarios and Storyboards",
+      title: "Assignment 3.3: Scenarios and Storyboards",
       link: SiteLinks.assignment_3_4_top.href,
       date: verifyCalendarDate("2025-02-17", "Mon"),
       submission: "canvas",
@@ -575,46 +603,45 @@ export const calendarData: {
     //
     // Milestone 5
     //
-    assignment_5_digital_mockup: {
-      type: "assignment",
-      title: "Assignment 5: Digital Mockup",
-      link: SiteLinks.assignment_5_digital_mockup_top.href,
-      date: verifyCalendarDate("2025-03-12", "Wed"),
-      submission: "canvas",
-      submitCanvasTime: "11:59pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1779838/assignments/9882201",
-    },
-    assignment_5_poster_initial: {
-      type: "assignment",
-      title: "Assignment 5: Initial Poster",
-      link: SiteLinks.assignment_5_poster_top.href,
-      date: verifyCalendarDate("2025-03-12", "Wed"),
-      submission: "canvas",
-      submitCanvasTime: "11:59pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1779838/assignments/9882203",
-    },
+
+    // assignment_5_poster_initial: {
+    //   type: "assignment",
+    //   title: "Assignment 5: Initial Poster",
+    //   link: SiteLinks.assignment_5_poster_top.href,
+    //   date: verifyCalendarDate("2025-03-12", "Wed"),
+    //   submission: "canvas",
+    //   submitCanvasTime: "11:59pm",
+    //   submitCanvasLink:
+    //     "https://canvas.uw.edu/courses/1779838/assignments/9882203",
+    // },
     assignment_5_poster_final: {
       type: "assignment",
-      title: "Assignment 5: Final Poster",
+      title: "Assignment 5: Poster",
       link: SiteLinks.assignment_5_poster_top.href,
-      date: verifyCalendarDate("2025-03-14", "Fri"),
+      date: verifyCalendarDate("2025-03-11", "Tue"),
       submission: "canvas",
       submitCanvasTime: "3:00pm",
       submitCanvasLink:
         "https://canvas.uw.edu/courses/1779838/assignments/9882202",
     },
-
+    assignment_5_digital_mockup: {
+        type: "assignment",
+        title: "Assignment 5: Digital Mockup",
+        link: SiteLinks.assignment_5_digital_mockup_top.href,
+        date: verifyCalendarDate("2025-03-12", "Wed"),
+        submission: "canvas",
+        submitCanvasTime: "11:59pm",
+        submitCanvasLink:
+          "https://canvas.uw.edu/courses/1779838/assignments/9882201",
+    },
     assignment_5_web_post_final: {
       type: "assignment",
-      title: "Assignment 5: Web Post",
+      title: "Assignment 5: Project Pitch",
       link: SiteLinks.assignment_5_web_post_top.href,
-      date: verifyCalendarDate("2025-03-14", "Fri"),
+      date: verifyCalendarDate("2025-03-12", "Wed"),
       submission: "canvas",
       submitCanvasTime: "8:00pm",
-      submitCanvasLink:
-        "https://canvas.uw.edu/courses/1779838/assignments/9882205"
+      submitCanvasLink: ""
     },
   },
 };
