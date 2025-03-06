@@ -97,11 +97,11 @@ export const SiteLinks = {
   },
   assignment_3_3_top: {
     href: "/assignments/milestone-3/assignment-3-3/#assignment-33-design-presentations",
-    anchor: "Assignment 3.3",
+    anchor: "Design Critique",
   },
   assignment_3_4_top: {
     href: "/assignments/milestone-3/assignment-3-4/#assignment-34-scenarios-and-storyboards",
-    anchor: "Assignment 3.4",
+    anchor: "Assignment 3.3",
   },
   milestone_3_report_top: {
     href: "/assignments/milestone-3/report/#milestone-3-report",
