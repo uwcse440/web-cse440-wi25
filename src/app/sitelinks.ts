@@ -59,9 +59,9 @@ export const PAGE_LINKS_MILESTONE_4 = [
 export const PAGE_LINKS_MILESTONE_5 = [
   SiteLinks.milestone_5_top,
   [
-    SiteLinks.assignment_5_digital_mockup_top,
     SiteLinks.assignment_5_poster_top,
-    SiteLinks.assignment_5_web_post_top,
+    SiteLinks.assignment_5_digital_mockup_top,
+    SiteLinks.assignment_5_pitch_top,
   ],
 ];
 

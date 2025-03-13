@@ -139,17 +139,17 @@ export const SiteLinks = {
     href: "/assignments/milestone-5/#assignment-5-communicating-your-design",
     anchor: "Milestone 5",
   },
-  assignment_5_digital_mockup_top: {
-    href: "/assignments/milestone-5/digital-mockup/#assignment-5-digital-mockup",
-    anchor: "Digital Mockup",
-  },
   assignment_5_poster_top: {
     href: "/assignments/milestone-5/poster/#assignment-5-poster",
-    anchor: "Poster",
+    anchor: "Assignment 5.1",
   },
-  assignment_5_web_post_top: {
-    href: "/assignments/milestone-5/web-post/#assignment-5-web-post",
-    anchor: "Web Post",
+  assignment_5_digital_mockup_top: {
+    href: "/assignments/milestone-5/digital-mockup/#assignment-5-digital-mockup",
+    anchor: "Assignment 5.2",
+  },
+  assignment_5_pitch_top: {
+    href: "/assignments/milestone-5/pitch/#assignment-5-pitch",
+    anchor: "Assignment 5.3",
   },
 
   calendarTop: {
