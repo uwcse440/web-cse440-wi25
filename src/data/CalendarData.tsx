@@ -266,7 +266,7 @@ export const calendarData: {
       date: verifyCalendarDate("2025-02-27", "Thu"),
       timeAndLocation: TIME_AND_LOCATION_LECTURE,
       title: "History & Exam Q&A",
-      slides: "",
+      slides: "https://drive.google.com/file/d/13cjj7WD3t5WpfXh9m6k8EkRK8qbqxRq-/view?usp=drive_link",
     },
     {
         type: "lecture",
@@ -616,7 +616,7 @@ export const calendarData: {
     // },
     assignment_5_poster_final: {
       type: "assignment",
-      title: "Assignment 5: Poster",
+      title: "Assignment 5.1: Poster",
       link: SiteLinks.assignment_5_poster_top.href,
       date: verifyCalendarDate("2025-03-11", "Tue"),
       submission: "canvas",
@@ -626,22 +626,22 @@ export const calendarData: {
     },
     assignment_5_digital_mockup: {
         type: "assignment",
-        title: "Assignment 5: Digital Mockup",
+        title: "Assignment 5.2: Digital Mockup",
         link: SiteLinks.assignment_5_digital_mockup_top.href,
-        date: verifyCalendarDate("2025-03-12", "Wed"),
+        date: verifyCalendarDate("2025-03-11", "Tue"),
         submission: "canvas",
-        submitCanvasTime: "11:59pm",
+        submitCanvasTime: "3:00pm",
         submitCanvasLink:
           "https://canvas.uw.edu/courses/1779838/assignments/9882201",
     },
-    assignment_5_web_post_final: {
+    assignment_5_pitch: {
       type: "assignment",
-      title: "Assignment 5: Project Pitch",
-      link: SiteLinks.assignment_5_web_post_top.href,
-      date: verifyCalendarDate("2025-03-12", "Wed"),
+      title: "Assignment 5.3: Project Pitch",
+      link: SiteLinks.assignment_5_pitch_top.href,
+      date: verifyCalendarDate("2025-03-13", "Thu"),
       submission: "canvas",
-      submitCanvasTime: "8:00pm",
-      submitCanvasLink: ""
+      submitCanvasTime: "10:00am",
+      submitCanvasLink: "https://canvas.uw.edu/courses/1779838/assignments/9882204"
     },
   },
 };

@@ -1,0 +1,76 @@
+import { Alert } from "@mui/material";
+
+import { AssignmentDueDateTime } from "@/components/AssignmentDueDateTime";
+import { ProjectMilestoneSamples } from "@/components/ProjectMilestoneSamples";
+import { TBD } from "@/components/TBD";
+import { UnderDevelopment } from "@/components/UnderDevelopment";
+import { AssignmentSubmitCanvasLink } from "@/components/links/AssignmentSubmitCanvasLink";
+import { CourseStoreLink } from "@/components/links/CourseStoreLink";
+import { SiteLink } from "@/components/links/SiteLink";
+import { default as ClarityAndPresentationReference } from "@/contentcomponents/ClarityAndPresentationReference.mdx";
+import { default as GroupAssignment } from "@/contentcomponents/GroupAssignment.mdx";
+import { default as ParticipantAnonymity } from '@/contentcomponents/ParticipantAnonymity.mdx';
+import { default as PriorSamplesWarning } from "@/contentcomponents/PriorSamplesWarning.mdx";
+import { calendarData } from "@/data/CalendarData";
+import { SiteLinks } from "@/data/SiteLinks";
+
+# Assignemnt 5.3: Pitch
+
+<UnderDevelopment display={false} />
+
+Due: <AssignmentDueDateTime assignmentKey={calendarData.assignments.assignment_5_pitch}/>
+
+This assignment is a component of <SiteLink linkKey={SiteLinks.milestone_5_top}/>.
+Be sure you have reviewed that larger context for this assignment.
+
+In this assignment, you will craft a compelling pitch for your group project. 
+Your pitch should clearly convey the problem your project addresses, your proposed solution, including your target group, and its potential impact. 
+
+For this submission, please submit one pitch for your group. At the poster session, each member of your group should have their own version of the pitch. Please avoid reading it off! 
+
+For this assignment we will rate the written pitch (one version). 
+Your written pitch should have around 75-100 words (~30 seconds) and include the following element:
+
+- **Problem Statement**
+    
+    - Define the problem your project addresses.
+    - Explain why this problem is significant and which target group/community it affects.
+
+- **Proposed Solution**
+    
+    - Describe the proposed solution your group has.
+    - Highlight the key features. 
+    - Explain how users will interact with your solution.
+
+- **Impact**
+   
+   - Describe the expected benefits for the target group/community
+
+
+## Rubric
+
+Your pitch will be evaluated based on:
+
+- **Problem Definition** – Clearly articulates the problem, its significance, and its impact on the community.
+
+- **Creativity and Rationale** – Demonstrates originality and provides a strong, well-reasoned justification for the proposed solution.
+
+- **Impact**  – Clearly conveys how the proposed solution will benefit the target group/community.
+
+- **Clarity & Presentation** – Presents ideas in a well-structured and coherent manner with no more than 100 words.
+
+
+## Submission
+
+Due Date: Thursday, March 13, at 10:00 AM
+
+For this assignment, no Google Slides template is provided. Instead, please write your pitch in a document and submit it as a PDF.
+
+Reminders & Requirements:
+
+- <GroupAssignment />
+
+- <ClarityAndPresentationReference />
+    
+- Submit via Canvas here: <AssignmentSubmitCanvasLink assignmentKey={calendarData.assignments.assignment_5_pitch} />
+
